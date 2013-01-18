@@ -3,9 +3,9 @@ Creative HTML5
 
 Creative HTML5 is a Spring 2013 course for BFA students at [Parsons the New School for Design](http://www.newschool.edu/parsons/) taught by me, [Evan You](http://www.youyuxi.com). This course introduces students to using HTML5 as a platform for creative explorations.
 
-- [Resources]()
+- [Resources](https://github.com/yyx990803/creative-html5/blob/master/RESOURCES.md)
 
-- [Schedule]()
+- [Schedule](https://github.com/yyx990803/creative-html5/blob/master/SCHEDULE.md)
 
 - [Full Syllabus](https://docs.google.com/document/d/1LZ_fJCAgS8VPH1v8JwJzqTzpvikqe7M9Ijlz8Dshhlo/edit)
 
