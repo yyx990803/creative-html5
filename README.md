@@ -9,8 +9,8 @@ Creative HTML5 is a Spring 2013 course for BFA students at [Parsons the New Scho
 
 - <a href="https://docs.google.com/document/d/1LZ_fJCAgS8VPH1v8JwJzqTzpvikqe7M9Ijlz8Dshhlo/edit" target="_blank">Full Syllabus</a>
 
-About This Repo
----------------
+For Students
+------------
 
 This is kind of an experiment in itself by using a GitHub repo as the course's website. If you haven't created an account here, do it now. Learn to love Github - because you will get so much out of it. Announcements about the class will be updated in this file. Each week's content - slides, code, assignments and tutorials will be in its own separate folder.
 
@@ -22,3 +22,8 @@ Announcements
 ### Jan 18
 
 This is a test announcement
+
+License
+-------
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Creative HTML5</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
