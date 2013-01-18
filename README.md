@@ -7,7 +7,7 @@ Creative HTML5 is a Spring 2013 course for BFA students at [Parsons the New Scho
 
 - [Schedule](https://github.com/yyx990803/creative-html5/blob/master/SCHEDULE.md)
 
-- [Full Syllabus](https://docs.google.com/document/d/1LZ_fJCAgS8VPH1v8JwJzqTzpvikqe7M9Ijlz8Dshhlo/edit)
+- <a href="https://docs.google.com/document/d/1LZ_fJCAgS8VPH1v8JwJzqTzpvikqe7M9Ijlz8Dshhlo/edit">Full Syllabus</a>
 
 About This Repo
 ---------------
