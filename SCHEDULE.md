@@ -8,7 +8,7 @@ Jan.31 - Introduction
 Feb.7 - Getting Started: Background, Tools, Resources  
 JavaScript fundamentals  
 2D Graphics: Drawing and Animating (1) - Canvas API & SVG  
-*Project 1: Visual - assigned*  
+**Project 1: Visual - assigned**  
 
 ### Week 3:
 Feb.14 - Object oriented javascript  
@@ -19,9 +19,9 @@ Feb. 21 - Drawing and Animating (3) - advanced animation techniques
 Project 1 in progress workshop
 
 ### Week 5:
-Feb.28 - *Project 1: Visual - critique*  
+Feb.28 - **Project 1: Visual - critique**  
 Data (1) - Arrays, JSON, Ajax  
-*Project 2: Data - assigned*
+**Project 2: Data - assigned**
 
 ### Week 6: 
 Mar.7 - Data (2) - working with APIs, visualizing data
@@ -31,9 +31,9 @@ Mar.14 - Data (3) - data + animation
 Project 2 in progress workshop
 
 ### Week 8:
-Mar.21 - *Project 2: Data - critique*  
+Mar.21 - **Project 2: Data - critique**  
 Interactivity (1) - Mouse, Keyboard, Scrolling  
-*Project 3: Interactivity - assigned*
+**Project 3: Interactivity - assigned**
 
 ### Week 9: 
 Mar.28 - Spring Break
@@ -46,8 +46,8 @@ Apr.11 - Interactivity (3) - WebCam & Speech Recognition
 Project 3 in progress workshop
 
 ### Week 12: 
-Apr.18 - *Project 3: Interactivity - critique*  
-*Final Project - assigned*
+Apr.18 - **Project 3: Interactivity - critique**  
+**Final Project - assigned**
 
 ### Week 13: 
 Apr.25 - TBD depending on class progress and interest (see potential topics below)
@@ -59,7 +59,7 @@ May.2 - TBD / Final Project Workshop
 May.9 - Final Project Workshop
 
 ### Week 16:
-May.16 - *Final Critique*
+May.16 - **Final Critique**
 
 
 Potential Additional Topics
