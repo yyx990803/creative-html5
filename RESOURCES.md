@@ -26,10 +26,10 @@ A neatly-presented online book that introduces HTML5 features.
 
 ## Online Resources
 
+-   [Codepen](http://codepen.io/) - Sketch, Explore, Fork and Share HTML5 experiments!
 -   [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - Technical reference. This is a lot better than W3School.
 -   [Stack Overflow](http://stackoverflow.com/) - Technical Q&A. You will very likely find that your question has already been answered here.
 -   [Jster](http://jster.net) - Catalog for JavaScript libraries
--   [jsFiddle](http://jsfiddle.net) - Use this to quickly create shareable javascript experiments.
 -   [HTML5 Rocks](http://www.html5rocks.com/en/) - Cutting-edge HTML5 articles, some of them are quite advanced.
 -   [Chrome Experiments](http://www.chromeexperiments.com/) - Tons of awesome HTML5 demos.
 -   [CreativeJS](http://creativejs.com) - Curation of kick-ass HTML5 projects.
