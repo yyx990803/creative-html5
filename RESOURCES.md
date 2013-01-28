@@ -3,7 +3,7 @@ For those of you who feel a bit fuzzy about your JavaScript skills, I recommend 
 
 ## Books
 
-These are all recommended but not required.
+These are all recommended but not required. We will cover basic to intermediate level stuff in class, the following books can be considered further reading in case you want to dig deeper.
 
 ### <a href="http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides/dp/0596805527/ref=sr_1_1?ie=UTF8&qid=1358458442&sr=8-1&keywords=definitive+guide+to+javascript" target="_blank">JavaScript: The Definitive Guide</a>
 
