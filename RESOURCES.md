@@ -33,6 +33,7 @@ A neatly-presented online book that introduces HTML5 features.
 -   <a href="http://www.html5rocks.com/en" target="_blank">HTML5 Rocks</a> - Cutting-edge HTML5 articles, some of them are quite advanced.
 -   <a href="http://www.chromeexperiments.com/" target="_blank">Chrome Experiments</a> - Tons of awesome HTML5 demos.
 -   <a href="http://creativejs.com" target="_blank">CreativeJS</a> - Curation of kick-ass HTML5 projects.
+-   <a href="http://learn.shayhowe.com/advanced-html-css/" target="_blank">Advaned Guide to HTML & CSS</a> - Title explains itself. Professional-oriented and up-to-date.
 
 ## Open Source Demos by Rockstars
 
