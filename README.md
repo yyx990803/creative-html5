@@ -19,9 +19,9 @@ This is an experiment in itself by using a GitHub repo as the course's website. 
 Announcements
 -------------
 
-### Jan 18
+### Jan 31
 
-This is a test announcement
+<a href="https://github.com/yyx990803/creative-html5/tree/master/week1" target="_blank">Week 1 Assignment</a> posted.
 
 * * *
 
