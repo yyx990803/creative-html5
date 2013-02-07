@@ -16,6 +16,11 @@ This is an experiment in itself by using a GitHub repo as the course's website. 
 
 **Note** - If you have code-related questions, please use this repo's [Issues System](https://github.com/yyx990803/creative-html5/issues?state=open). This makes it much easier for me to keep track of your questions. Also, since issues are public, you can help each other out or learn from others' questions.
 
+For Non-students
+----------------
+
+If you're not in class but simply want to learn something from this repo, please note that this course is taught at a design school. Most of the students do not have formal training in programming, so I have to make sure those with lesser experience could keep up. Also, I probably don't have enough time during the semester to convert course slides and code examples into reading-friendly tutorials, but I will try to do that afterwards.
+
 Announcements
 -------------
 

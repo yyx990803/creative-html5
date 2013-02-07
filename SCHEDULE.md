@@ -42,7 +42,7 @@ Mar.28 - Spring Break
 Apr.4 - Interactivity (2) - Mobile Device: Touch, Accelerometer
 
 ### Week 11: 
-Apr.11 - Interactivity (3) - WebCam & Speech Recognition  
+Apr.11 - Interactivity (3) - WebCam & Speech Recognition
 Project 3 in progress workshop
 
 ### Week 12: 
