@@ -1,6 +1,8 @@
 # Week 2 - JavaScript Fundamentals & Intro to Canvas API
 
-### Assignment
+## Assignment
+
+### 1. Visual Piece
 
 Create a visual composition with the Canvas API. You must use all 5 things we talked about in class:
 
@@ -13,6 +15,10 @@ Create a visual composition with the Canvas API. You must use all 5 things we ta
 The composition must have a visual theme, but just a random collage. Think of it as designing a poster with JavaScript. Also think about the possibilities of the elements being animated in future revisions - we will do that as we learn more about programmatic animation.
 
 Bonus points: figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
+
+### 2. Git
+
+Follow this <a href="https://github.com/yyx990803/creative-html5/blob/master/GIT.md" target="_blank">guide</a> on cloning this repo to your Mac with git.
 
 ### Resources
 

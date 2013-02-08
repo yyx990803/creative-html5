@@ -1,6 +1,6 @@
 # Week 1 - Introduction
 
-### Assignment
+## Assignment
 
 We just went over the syllabus and the structure of the course, nothing particularly interesting. But we'll dive right into code next week. To get ready for that, I want you to do the following:
 
