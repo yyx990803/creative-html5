@@ -15,6 +15,8 @@ Create a visual composition with the Canvas API. You must use all the stuff we t
 
 The composition must have a visual theme, but just a random collage. Think of it as designing a poster with JavaScript. Also think about the possibilities of the elements being animated in future revisions - we will do that as we learn more about programmatic animation.
 
+If you already know how to do animation and mouse interactions - hold on with that and focus on creating interesting static compositions. (hint: you can use for loops)
+
 Bonus points:
 
 1. Figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
@@ -24,6 +26,8 @@ Bonus points:
 **How to submit**
 
 Since most of you don't know how to push stuff to GitHub yet, please zip your files and name it "yourFirstName_week2.zip" then send to my newschool email address.
+
+If you know how to push to github though, you are encouraged to do that and just send me the link to your repo.
 
 ### 2. Git
 
