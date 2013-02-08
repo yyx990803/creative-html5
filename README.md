@@ -28,12 +28,14 @@ Announcements
 
 ### Feb 8
 
-<a href="https://github.com/yyx990803/creative-html5/tree/master/week2" target="_blank">Week 2 Assignment</a> posted.
+- <a href="https://github.com/yyx990803/creative-html5/tree/master/week2" target="_blank">Week 2 Assignment</a> posted.
 
 ### Jan 31
 
-<a href="https://github.com/yyx990803/creative-html5/tree/master/week1" target="_blank">Week 1 Assignment</a> posted.
+- <a href="https://github.com/yyx990803/creative-html5/tree/master/week1" target="_blank">Week 1 Assignment</a> posted.
+
 
 * * *
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Creative HTML5</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.

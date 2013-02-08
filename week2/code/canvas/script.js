@@ -18,11 +18,14 @@ ctx.lineTo(300, 180)
 ctx.strokeStyle = '#ffffff'
 ctx.stroke()
 
-// diagnal linear gradient
+// Linear Gradient
+
 // Arguments: x0, y0, x1, y1
-// The gradient will paint from point(x0, y0) to point(x1, y1)
-// note the points are relative to the entire canvas!
+// The linear gradient will paint along a line from point(x0, y0) to point(x1, y1)
+// NOTE these points are relative to the entire canvas!
+
 // suppose we want to draw a 300x300 circle with this gradient, top left at point(360, 30)
+
 var gradient = ctx.createLinearGradient(360, 30, 360 + 300, 30 + 300)
 gradient.addColorStop(0, "#ff3333") // starting color
 gradient.addColorStop(1, "#ffffff") // ending color
@@ -32,7 +35,7 @@ var radius = 150
 ctx.beginPath()
 ctx.arc(360 + radius, 30 + radius, radius, 0, Math.PI * 2) // Arguments: x, y, radius，starting angle, ending angle (angles are in radiant: 2*Pi = 360 degrees)
 ctx.closePath()
-ctx.fillStyle = gradient
+ctx.fillStyle = gradient // This is how you use a gradient as a fill
 ctx.fill()
 
 // text
