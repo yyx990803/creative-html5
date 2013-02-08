@@ -33,7 +33,9 @@ gradient.addColorStop(1, "#ffffff") // ending color
 // draw a circle and fill with the gradient
 var radius = 150
 ctx.beginPath()
-ctx.arc(360 + radius, 30 + radius, radius, 0, Math.PI * 2) // Arguments: x, y, radius，starting angle, ending angle (angles are in radiant: 2*Pi = 360 degrees)
+
+// Arguments: x, y, radius，starting angle, ending angle (angles are in radiant: 2*Pi = 360 degrees)
+ctx.arc(360 + radius, 30 + radius, radius, 0, Math.PI * 2)
 ctx.closePath()
 ctx.fillStyle = gradient // This is how you use a gradient as a fill
 ctx.fill()
