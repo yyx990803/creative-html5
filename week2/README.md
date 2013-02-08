@@ -16,6 +16,10 @@ The composition must have a visual theme, but just a random collage. Think of it
 
 Bonus points: figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
 
+**How to submit**
+
+Since most of you don't know how to push stuff to GitHub yet, please zip your files and name it "yourFirstName_week2.zip" then send to my newschool email address.
+
 ### 2. Git
 
 Follow this <a href="https://github.com/yyx990803/creative-html5/blob/master/GIT.md" target="_blank">guide</a> on cloning this repo to your Mac with git.
