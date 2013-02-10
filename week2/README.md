@@ -12,7 +12,7 @@ Create a visual composition with the Canvas API. You must use all 5 things we ta
 - Linear Gradient (Radial Gradient is similar)
 - Text (I forgot about this in class, but you can find the example in week2/code/canvas)
 
-The composition must have a visual theme, but just a random collage. Think of it as designing a poster with JavaScript. Also think about the possibilities of the elements being animated in future revisions - we will do that as we learn more about programmatic animation.
+The composition must have a visual theme, not just a random collage. Think of it as designing a poster with JavaScript. Also think about the possibilities of the elements being animated in future revisions - we will do that as we learn more about programmatic animation.
 
 Bonus points: figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
 
@@ -23,6 +23,10 @@ Since most of you don't know how to push stuff to GitHub yet, please zip your fi
 ### 2. Git
 
 Follow this <a href="https://github.com/yyx990803/creative-html5/blob/master/GIT.md" target="_blank">guide</a> on cloning this repo to your Mac with git.
+
+### 3. JavaScript [Optional]
+
+I know I'm going quite fast about JavaScript concepts in class. I want to leave us more time to actually make stuff, however it is important for you to understand these building blocks to be able to make cool stuff. So, if you feel lost about a certain slide, I strongly recommend you type the example code into the console or test it out in a blank HTML page with `console.log()`. **The only way to fully understand a programming concept is to write and test it yourself.**
 
 ### Resources
 
