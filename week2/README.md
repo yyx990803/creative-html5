@@ -4,21 +4,30 @@
 
 ### 1. Visual Piece
 
-Create a visual composition with the Canvas API. You must use all 5 things we talked about in class:
+Create a visual composition with the Canvas API. You must use all the stuff we talked about in class:
 
 - Rectangle
 - Circle
 - Line
 - Linear Gradient (Radial Gradient is similar)
+- Image
 - Text (I forgot about this in class, but you can find the example in week2/code/canvas)
 
 The composition must have a visual theme, not just a random collage. Think of it as designing a poster with JavaScript. Also think about the possibilities of the elements being animated in future revisions - we will do that as we learn more about programmatic animation.
 
-Bonus points: figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
+If you already know how to do animation and mouse interactions - hold on with that and focus on creating interesting static compositions. (hint: you can combine for loops and Math.random() for a generative process.)
+
+Bonus points:
+
+1. Figure out how to use context matrix transform to rotate things in canvas and use it in your composition.
+
+2. Explore drawing complex paths combining moveTo(), lineTo() and arc()
 
 **How to submit**
 
 Since most of you don't know how to push stuff to GitHub yet, please zip your files and name it "yourFirstName_week2.zip" then send to my newschool email address.
+
+If you know how to push to github though, you are encouraged to do that and just send me the link to your repo. Ideally, keep all class projects in the same repo unless they are too big to sit with each other.
 
 ### 2. Git
 
