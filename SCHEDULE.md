@@ -5,37 +5,37 @@ Schedule
 Jan.31 - Introduction
 
 ### Week 2:
-Feb.7 - Getting Started: Background, Tools, Resources
-JavaScript fundamentals
-2D Graphics: Drawing and Animating (1) - Canvas API
+Feb.7 - Getting Started: Background, Tools, Resources  
+JavaScript fundamentals  
+2D Graphics: Drawing and Animating (1) - Canvas API  
 **Project 1: Visual - assigned**
 
 ### Week 3:
-Feb.14 - More JavaScript fundamentals
+Feb.14 - More JavaScript fundamentals  
 Drawing and Animating (2) - programmatic animation basics
 
 ### Week 4:
-Feb. 21 - Object Oriented JavaScript
-Drawing and Animating (3) - advanced animation techniques
+Feb. 21 - Object Oriented JavaScript  
+Drawing and Animating (3) - advanced animation techniques  
 Project 1 in progress workshop
 
 ### Week 5:
-Feb.28 - **Project 1: Visual - critique**
-Data (1) - JSON & Ajax, working with APIs
+Feb.28 - **Project 1: Visual - critique**  
+Data (1) - JSON & Ajax, working with APIs  
 **Project 2: Data - assigned**
 
 ### Week 6: 
-Mar.7 - SVG & CSS3
+Mar.7 - SVG & CSS3  
 Data (2) - Visualizing Data
 
 ### Week 7: 
-Mar.14 - SVG & CSS3 continued
-Data (3) - data + animation
+Mar.14 - SVG & CSS3 continued  
+Data (3) - data + animation  
 Project 2 in progress workshop
 
 ### Week 8:
-Mar.21 - **Project 2: Data - critique**
-Interactivity (1) - Mouse, Keyboard, Scrolling
+Mar.21 - **Project 2: Data - critique**  
+Interactivity (1) - Mouse, Keyboard, Scrolling  
 **Project 3: Interactivity - assigned**
 
 ### Week 9: 
@@ -45,11 +45,11 @@ Mar.28 - Spring Break
 Apr.4 - Interactivity (2) - Mobile Device: Touch, Accelerometer
 
 ### Week 11: 
-Apr.11 - Interactivity (3) - WebCam & Speech Recognition
+Apr.11 - Interactivity (3) - WebCam & Speech Recognition  
 Project 3 in progress workshop
 
 ### Week 12: 
-Apr.18 - **Project 3: Interactivity - critique**
+Apr.18 - **Project 3: Interactivity - critique**  
 **Final Project - assigned**
 
 ### Week 13: 
