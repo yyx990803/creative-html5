@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops + Canvas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+
+            // NOTE
+            // This code assumes the browser supports requestAnimationFrame (e.g. Chrome)
+            // For general use, you need to include a polyfill (raf_polyfill.js)
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            var width = 500,
+                height = 500,
+                x = 0,
+                y = 0,
+                radius = 20,
+                speed = 2
+
+            var radiusChange = 0.1
+
+            ctx.fillStyle = 'rgb(255, 66, 66)'
+
+            animate()
+
+            function animate () {
+
+                requestAnimationFrame(animate)
+
+                x += speed
+                y += speed
+
+                radius += radiusChange
+
+                if (radius > 30 || radius < 20) {
+                    radiusChange = -radiusChange
+                }
+
+                if (x > width) {
+                    x = 0
+                }
+
+                if (y > height) {
+                    y = 0
+                }
+
+                ctx.clearRect(0, 0, width, height)
+                drawCircle()
+
+            }
+
+            function drawCircle () {
+
+                ctx.beginPath()
+                ctx.arc(x, y, radius, 0, Math.PI * 2)
+                ctx.fill()
+
+            }
+
+        </script>
+    </body>
+</html>

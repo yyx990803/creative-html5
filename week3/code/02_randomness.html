@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops + Randomness</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            // keep track of our position
+            // start at the center.
+            var x = 400,
+                y = 400
+
+            var randomness = 100
+
+            ctx.lineWidth = 2
+
+            // do this 100 times!
+            for (var i = 0; i < 100; i++) {
+
+                // start a new path
+                ctx.beginPath()
+
+                // move the 'pen' to current position
+                ctx.moveTo(x, y)
+
+                // randomly pick the next target position
+                x = x + randomInt(-randomness, randomness)
+                y = y + randomInt(-randomness, randomness)
+
+                // draw path
+
+                // straight lines
+                // ctx.lineTo(x, y)
+
+                // or curves...
+                ctx.quadraticCurveTo(x + randomInt(-randomness, randomness), y + randomInt(-randomness, randomness), x, y)
+
+                // pick a random color
+                ctx.strokeStyle = 'rgb(' + 255 + ',' + randomInt(0, 255) + ',' + randomInt(0, 255) + ')'
+
+                // stroke the path
+                ctx.stroke()
+            }
+
+            // this function takes in a min value and a max value,
+            // then returns a random integer in between.
+            function randomInt (min, max) {
+                return Math.round(Math.random() * (max - min) + min)
+            }
+
+        </script>
+    </body>
+</html>

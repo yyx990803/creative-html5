@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops + Canvas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            // keep track of our position
+            // start at top left.
+            var x = 0,
+                y = 0,
+                alpha = 0.1
+
+            // do this 50 times!
+            for (var i = 0; i < 50; i++) {
+
+                // draw a rectangle
+                ctx.fillStyle = 'rgba(255, 0, 0, ' + alpha + ')'
+                ctx.fillRect(x, y, 30, 30)
+
+                // modify the variables by a little bit
+                alpha += 0.02
+                x += 15
+                y += 15
+
+            }
+
+        </script>
+    </body>
+</html>
