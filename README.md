@@ -1,7 +1,7 @@
 Creative HTML5
 ==============
 
-Creative HTML5 is a Spring 2013 course for BFA students at [Parsons the New School for Design](http://www.newschool.edu/parsons/). This course introduces students to using HTML5 as a platform for creative explorations.
+Creative HTML5 is a Spring 2013 course for BFA students at [Parsons the New School for Design](http://www.newschool.edu/parsons/). This course introduces students to using HTML5 as a platform for creative explorations. It will also cover the basics of JavaScript.
 
 - [Resources](https://github.com/yyx990803/creative-html5/blob/master/RESOURCES.md)
 
@@ -21,7 +21,7 @@ This is an experiment in itself by using a GitHub repo as the course's website. 
 For Non-students
 ----------------
 
-If you're not in class but simply want to learn something from this repo, please note that this course is taught at a design school. Most of the students do not have formal training in programming, so I have to make sure those with lesser experience could keep up. Also, I probably don't have enough time during the semester to convert course slides and code examples into reading-friendly tutorials, but I will try to do that afterwards.
+If you're not in class but simply want to learn something from this repo, please note that this course is taught at a design school. Most of the students do not have formal training in programming.
 
 Announcements
 -------------
