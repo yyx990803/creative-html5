@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            var x = 0,
+                y = 0
+
+            ctx.fillStyle = '#f00'
+
+            function loop () {
+
+                setTimeout(loop, 1000 / 60)
+
+                ctx.clearRect(0, 0, 500, 500)
+
+                ctx.fillRect(x, y, 10, 10)
+
+                x += 1
+
+                if (x > 500) {
+                    x = 0
+                }
+            }
+
+            loop()
+
+        </script>
+    </body>
+</html>

@@ -10,7 +10,7 @@
 
             // NOTE
             // This code assumes the browser supports requestAnimationFrame (e.g. Chrome)
-            // For general use, you need to include a polyfill (raf_polyfill.js)
+            // For general use in all browsers, you need to include a polyfill (raf_polyfill.js)
 
             var canvas = document.getElementById('canvas'),
             ctx = canvas.getContext('2d')
@@ -20,9 +20,10 @@
                 x = 0,
                 y = 0,
                 radius = 20,
-                speed = 2
+                speedX = 1,
+                speedY = 2
 
-            var radiusChange = 0.1
+            var radiusChange = 1
 
             ctx.fillStyle = 'rgb(255, 66, 66)'
 
@@ -32,8 +33,8 @@
 
                 requestAnimationFrame(animate)
 
-                x += speed
-                y += speed
+                x += speedX
+                y += speedY
 
                 radius += radiusChange
 

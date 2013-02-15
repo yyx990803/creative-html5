@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            ctx.fillStyle = '#0f0' // green
+
+            ctx.save()
+
+            ctx.fillStyle = '#f00' // red
+            ctx.rotate(Math.PI / 9) // rotate stuff
+            ctx.translate(100, 100)
+            ctx.fillRect(0, 0, 100, 100)
+
+            ctx.restore() // color will change back to green
+                          // rotation will also be 0
+
+            ctx.fillRect(200, 50, 100, 100)
+
+        </script>
+    </body>
+</html>

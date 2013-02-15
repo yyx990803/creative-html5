@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            ctx.fillStyle = '#f00'
+
+            var angle = tooRad(5),
+                alpha = 0.1
+
+            for (var i = 0; i < 10; i++) {
+                // things in here will happen 10 times
+                ctx.rotate(angle)
+
+                ctx.fillStyle = 'rgba(255, 0, 0, ' + alpha + ')'
+                ctx.fillRect(100, 100, 100, 100)
+
+                alpha += 0.02
+
+            }
+
+            function tooRad (deg) {
+               return Math.PI / 180 * deg
+            }
+
+        </script>
+    </body>
+</html>
