@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prototype</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <script>
+            
+            // setup the canvas context
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            // =================================================
+
+            // Define a constructor, which can be reused to
+            //   create new objects with the same properties
+            function Circle () {
+
+                // this part now only deals with properties
+                // that can be different on each created object
+                this.x = randomInt(0, 800)
+                this.y = randomInt(0, 800)
+                this.radius = randomInt(5, 10)
+                this.color = 'rgb(' + randomInt(0, 255) + ',' + randomInt(0, 255) + ',' + randomInt(0, 255) + ')'
+
+                this.speedX = randomInt(-3, 3) // -3 ~ 3
+                this.speedY = randomInt(-3, 3)
+
+            }
+            
+            // anything in the prototype is shared across all
+            // Circle objects.
+            Circle.prototype.update = function () {
+                this.x += this.speedX
+                this.y += this.speedY
+            }
+
+            Circle.prototype.draw = function () {
+                ctx.beginPath()
+                ctx.fillStyle = this.color
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+                ctx.fill()
+            }
+
+            // =================================================
+
+            // Now we want to create A LOT of them
+            var total = 1000
+
+            // first, need an Array to hold them all
+            var circles = []
+
+            // then we can simply create them with the constructor
+            // inside a for loop, and push them into the Array
+            for (var i = 0; i < total; i++) {
+                circles.push(new Circle())
+            }
+            
+            // start the animation
+            animate()
+
+            function animate () {
+
+                requestAnimationFrame(animate)
+                
+                // clear the canvas
+                ctx.clearRect(0, 0, 800, 800)
+
+                // update ALL the circles
+                for (var i = 0; i < circles.length; i++) {
+                    circles[i].update()
+                    circles[i].draw()
+                }
+
+            }
+
+            function randomInt (min, max) {
+                return Math.round(Math.random() * (max - min) + min)
+            }
+
+        </script>
+    </body>
+</html>

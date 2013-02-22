@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Constructor</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <canvas id="canvas" width="800" height="800"></canvas>
+        <script>
+            
+            // setup the canvas context
+            var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d')
+
+            // Define a constructor, which can be reused to
+            //   create new objects with the same properties
+            function Circle (x, y, radius, color) {
+                
+                this.x = x
+                this.y = y
+                this.radius = radius
+                this.color = color
+                
+                this.update = function () {
+                    this.x += 1
+                    this.y += 1
+                }
+
+                this.draw = function () {
+                    ctx.beginPath()
+                    ctx.fillStyle = this.color
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+                    ctx.fill()
+                }
+
+            }
+
+            // Now we can use the "new" keyword to create a real Circle object
+            var circle = new Circle(0, 0, 10, '#ff6666')
+            
+            // start the animation
+            animate()
+
+            function animate () {
+
+                requestAnimationFrame(animate)
+                
+                // clear the canvas
+                ctx.clearRect(0, 0, 800, 800)
+
+                // update and draw the circle on every frame
+                circle.update()
+                circle.draw()
+
+            }
+
+        </script>
+    </body>
+</html>

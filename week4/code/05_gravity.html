@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prototype</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body {
+                background: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <script>
+
+            var canvas = document.getElementById('canvas'),
+                ctx = canvas.getContext('2d')
+
+            var width = 500,
+                height = 500,
+                gravity = .2
+            
+            function Umbrella () {
+
+                this.x = Math.random() * width
+                this.y = Math.random() * -100
+                this.radius = 10
+
+                this.speedX = Math.random() * 10 - 5
+                this.speedY = Math.random() * 3
+
+            }
+
+            Umbrella.prototype = {
+
+                update: function () {
+                    
+                    // add acceleration to speedY
+                    this.speedY += gravity
+
+                    this.x += this.speedX
+                    this.y += this.speedY
+
+                    if (this.y > (height - this.radius)) {
+                        this.speedY *= .95
+                        if (this.speedY > 0) this.speedY *= -1
+                    }
+
+                    if (this.x > (width - this.radius) || this.x < this.radius) {
+                        this.speedX *= -1
+                    }
+
+                },
+
+                draw: function () {
+                    
+                    ctx.beginPath()
+
+                    // ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+
+                    ctx.fillStyle = '#ff6666'
+                    ctx.fill()
+
+                }
+
+            }
+
+            var umbrellas = []
+
+            for (var i = 0; i < 100; i++) {
+                umbrellas.push(new Umbrella())
+            }
+
+            animate()
+
+            function animate () {
+                requestAnimationFrame(animate)
+                
+                ctx.fillStyle = '#FFFFFF'
+                ctx.fillRect(0, 0, width, height)
+
+                for (var i = 0; i < 100; i++) {
+                    umbrellas[i].update()
+                    umbrellas[i].draw()
+                }
+            }
+
+        </script>
+    </body>
+</html>
