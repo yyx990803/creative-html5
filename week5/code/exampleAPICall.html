@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with Data</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <style type="text/css">
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is making an Ajax request to an API!</h1>
+        <p>Open up your console.</p>
+
+        <script type="text/javascript">
+
+            // this is the tumblr url we used in class, with one thing added at the end: "&callback=?"
+            // we will explain what that's for next class.
+            var apiURL = 'http://api.tumblr.com/v2/blog/scipsy.tumblr.com/posts?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&callback=?'
+            
+            // Finally, jQuery!!!
+            // it does make life easier.
+            $.getJSON(apiURL, function (data) {
+                // check this out in the console.
+                // you should also try to build some HTML out of it.
+                console.log(data)
+            })
+
+        </script>
+    </body>
+</html>

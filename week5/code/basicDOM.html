@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with Data</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                font-size: 13px;
+            }
+            .post {
+                width: 200px;
+                height: 100px;
+                float: left;
+                border: 1px solid #ddd;
+                box-shadow: 0 1px 8px rgba(0,0,0,.2);
+                padding: 20px;
+                margin: 10px;
+                background: #;
+            }
+            .post h2 {
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is rendering posts programatically!</h1>
+        <p><button id="render">render</button></p>
+
+        <script type="text/javascript">
+
+            // pretend we already have the data back
+            var data = {
+                posts: [
+                    {
+                        title: 'I am awesome',
+                        content: 'it\'s real!'
+                    },
+                    {
+                        title: 'I am epic',
+                        content: 'it\'s real!'
+                    },
+                    {
+                        title: 'I am so rad',
+                        content: 'it\'s real!'
+                    }
+                ]
+            }
+
+            var button = document.getElementById('render')
+            button.addEventListener('click', function () {
+
+                // pass every post data object into the buildPost() function
+                data.posts.forEach(buildPost)
+
+            })
+
+            function buildPost (postData) {
+
+                // create a new HTML div element
+                var node = document.createElement('div')
+
+                // give it class .post
+                node.classList.add('post')
+
+                // fill in some HTML content using the data
+                node.innerHTML = '<h2>' + postData.title + '</h2>' + '<p>' + postData.content + '</p>'
+
+                // add it to the page!
+                document.body.appendChild(node)
+
+            }
+        </script>
+    </body>
+</html>
