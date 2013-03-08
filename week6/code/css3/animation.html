@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            body {
+                -webkit-perspective: 800px;
+            }
+            @-webkit-keyframes move {
+                0% {
+                    -webkit-transform: none;
+                }
+                50% {
+                    -webkit-transform: rotateX(120deg);
+                }
+                100% {
+                    -webkit-transform: rotateX(360deg);
+                }
+            }
+
+            .box {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                top: 50px;
+                left: 50px;
+                -webkit-animation: move 2s linear 0s infinite;
+                -webkit-transform-style: preserve-3d;
+                background-color: #eee;
+            }
+
+            .ball {
+                background-color: #f00;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                -webkit-transform: rotateX(90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="ball">fselfjselfkjselkf</div>
+        </div>
+    </body>
+</html>

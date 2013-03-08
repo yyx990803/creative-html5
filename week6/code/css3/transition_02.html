@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Transitions</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="../../../common/jquery.min.js"></script>
+        <style type="text/css">
+            .object {
+                width: 100px;
+                height: 100px;
+                background-color: #F00;
+                -webkit-transition: -webkit-transform .3s cubic-bezier(.85, .09, .25, .90);
+            }
+            .object.rotate {
+                -webkit-transform: rotate(45deg);
+            }
+            .object.move {
+                -webkit-transform: translate(250px, 50px);
+            }
+            .object.scale {
+                -webkit-transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="object"></div>
+        <div style="margin-top: 300px">
+            <button>rotate</button>
+            <button>move</button>
+            <button>scale</button>
+        </div>
+        <script>
+            var object = $('.object')
+            $('button').on('click', function () {
+                var action = this.textContent
+                object
+                    .removeClass('rotate move scale')
+                    .addClass(action)
+            })
+        </script>
+    </body>
+</html>
