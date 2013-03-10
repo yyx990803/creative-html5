@@ -1,0 +1,11 @@
+{
+    "example": "this is some JSON!",
+    "arrayExample": [
+        {
+            "note": "property name must be in numbers",
+            "and": "no functions",
+            "nuvar test mberExample": 123,
+            "booleanExample": true
+        }
+    ]
+}
