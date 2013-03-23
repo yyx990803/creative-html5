@@ -62,7 +62,7 @@ Since there are no slides for this week, here's some review for the stuff we wen
 
 ## Assignment
 
-1. Build a Node.js JSON API that gives back different data based on the URL.
+1. Build a Node.js JSON API based on the example in `express` folder. It should give back different data based on the URL. Note the data must be in JSON format so that other people can use it in the browser.
 
 2. Make a html page that documents how to use your API. Explain what routes are available, what parameters are needed to get what data, and provide a few examples of how to use it.
 
