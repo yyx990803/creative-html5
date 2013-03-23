@@ -26,6 +26,18 @@ If you're not in class but simply want to learn something from this repo, please
 Announcements
 -------------
 
+### Mar 22
+
+- <a href="https://github.com/yyx990803/creative-html5/tree/master/week8" target="_blank">Week 8 Assignment</a> posted.
+
+### Mar 9
+
+- Week 7 class cancelled.
+
+### Mar 8
+
+- <a href="https://github.com/yyx990803/creative-html5/tree/master/week6" target="_blank">Week 6 Assignment</a> posted.
+
 ### Mar 1
 
 - <a href="https://github.com/yyx990803/creative-html5/tree/master/week5" target="_blank">Week 5 Assignment</a> posted.
