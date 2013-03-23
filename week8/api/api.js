@@ -1,15 +1,16 @@
-var http = require('http'),
-    fs   = require('fs')
+// the http module allows us to create a server
+var http = require('http')
 
-// First, read all the data files
+// the fs module allows us to read and write files to disk
+var fs   = require('fs')
 
-var citiesDataFile = fs.readFileSync('data/cities.json', 'utf-8'),
-    citiesData = JSON.parse(citiesDataFile)
+// First, read all the data files =============================================
 
-var characterFile = fs.readFileSync('data/characters.json', 'utf-8'),
-    characterData = JSON.parse(characterFile)
+// you can directly require JSON files!
+var citiesData = require('./data/cities.json'),
+    characterData = require('./data/characters.json')
 
-// Then define our routes, or handler functions.
+// Then define our routes, or handler functions. ==============================
 
 var routes = {
 
@@ -55,6 +56,8 @@ var routes = {
 
 }
 
+// Now it's time to create the server! ========================================
+
 var server = http.createServer(function (request, response) {
 
     // find the position of the second slash
@@ -67,15 +70,17 @@ var server = http.createServer(function (request, response) {
 
     } else {
 
+        // extract the information
+
+        // route is the characters between first and second slashes
         var route = request.url.slice(1, secondSlashIndex)
+
+        // parameter is the characters after the second slash
         var parameter = request.url.slice(secondSlashIndex + 1)
 
-        // if route == 'character'
-        // this line basically means
-        // routes.character(parameter)
-
-        // check if the route exists
+        // check if the route exists in our routes object
         if (routes[route]) {
+
             // call that route function with the parameter
             // and get the returned data
             var data = routes[route](parameter)
@@ -83,12 +88,17 @@ var server = http.createServer(function (request, response) {
             // convert the data into plain string
             // and send it back to browser
             response.end(JSON.stringify(data))
+
         } else {
+
             response.end('404')
+
         }
 
     }
 
 })
+
+// Finally, you need to make the server listen to a port. =====================
 
 server.listen(8080)
