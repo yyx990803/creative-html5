@@ -25,6 +25,24 @@ var data = [
         name: 'Daniel',
         age: 20,
         gender: 'male'
+    },
+
+    {
+        name: 'Robert',
+        age: 20,
+        gender: 'male'
+    },
+
+    {
+        name: 'Jennifer',
+        age: 20,
+        gender: 'female'
+    },
+
+    {
+        name: 'Rachal',
+        age: 20,
+        gender: 'female'
     }
 
 ]
@@ -39,12 +57,16 @@ app.get('/people', function (req, res) {
 
     var maxage = req.query.maxage,
         minage = req.query.minage,
-        gender = req.query.gender
+        gender = req.query.gender,
+        callback = req.query.callback
 
+    // a temporary array to hold our qualified list
     var returnArray = []
 
+    // loop through the entire dataset
     data.forEach(function ( person ) {
 
+        // assume this person is qualified to begin with.
         var qualified = true
 
         if (maxage && person.age > maxage) {
@@ -59,13 +81,19 @@ app.get('/people', function (req, res) {
             qualified = false
         }
 
+        // if still qualified after the checks, we can add this person
+        // to the qualified list.
         if (qualified) {
             returnArray.push(person)
         }
 
     })
 
-    res.send(returnArray)
+    if (callback) { // JSONP!
+        res.send(callback + '(' + JSON.stringify(returnArray) + ')')
+    } else {
+        res.send(returnArray)
+    }
 })
 
 app.listen(8080)
