@@ -1,12 +1,15 @@
 var express = require('express'),
     app = express()
 
+// just some fake data.
+// you should roll your own.
 var data = [
 
     {
-        name: 'Evan You',
+        name: 'Evan',
         age: 25,
-        gender: 'male'
+        gender: 'male',
+        avatar: 'fselkjfslefjf.jpg'
     },
 
     {
@@ -49,12 +52,16 @@ var data = [
 
 // home
 app.get('/', function (req, res) {
-    res.send('Hello! This is home')
+    var returnString = 'Welcome to the people API. Please use /people to get people data!'
+    res.send(returnString)
 })
 
 // students
 app.get('/people', function (req, res) {
 
+    // get all the possible query values.
+    // note if the url doesn't contain a certain value
+    // it will be undefined here
     var maxage = req.query.maxage,
         minage = req.query.minage,
         gender = req.query.gender,
@@ -69,14 +76,17 @@ app.get('/people', function (req, res) {
         // assume this person is qualified to begin with.
         var qualified = true
 
+        // check max age
         if (maxage && person.age > maxage) {
             qualified = false
         }
 
+        // check min age
         if (minage && person.age < minage) {
             qualified = false
         }
 
+        // check gender
         if (gender && person.gender !== gender) {
             qualified = false
         }
@@ -89,13 +99,16 @@ app.get('/people', function (req, res) {
 
     })
 
-    if (callback) { // JSONP!
+    if (callback) {
+        // JSONP!
         res.send(callback + '(' + JSON.stringify(returnArray) + ')')
     } else {
+        // just a normal request.
+        // this WILL be restricted by the same-origin policy.
         res.send(returnArray)
     }
 })
 
+// start everything.
 app.listen(8080)
-
 console.log('Server started on port 8080!')

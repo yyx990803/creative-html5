@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Awesome People API</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <style type="text/css">
+            .names {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-weight: 100;
+                font-size: 30px;
+                color: #222;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form id="form">
+
+            <input name="maxage" placeholder="maxage">
+            <br>
+            <input name="minage" placeholder="minage">
+            <br>
+            <input name="gender" placeholder="gender">
+
+        </form>
+
+        <br>
+
+        <button id="update">update</button>
+
+        <div>
+            <pre id="display">
+
+            </pre>
+        </div>
+
+        <div id="better-display"></div>
+
+        <script>
+
+            $('#update').on('click', function () {
+
+                // jQuery's serialize() method
+                // converts the input fields in a <form>
+                // into a query string that you can use in URLs
+                var query = $('#form').serialize()
+
+                // Note the `&callback=?` here!
+                // it signals to jQuery and the server
+                // that we want to use JSONP to get around same-origin policy
+                $.getJSON('http://localhost:8080/people?' + query + '&callback=?', function (data) {
+
+                    var display = $('#better-display')
+
+                    // clean previous stuff
+                    display.empty()
+
+                    // loop through the returned data
+                    data.forEach(function (person) {
+                        // create an element for each returned person
+                        // then append to display
+                        var personElement = $('<div class="names">' + person.name + '</div>')
+                        display.append(personElement)
+
+                    })
+                })
+            })
+
+        </script>
+    </body>
+</html>
