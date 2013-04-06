@@ -22,9 +22,9 @@ When the server is running, you can open `week9/client` to play with the API. Re
 
 3. Final deliverable due after the presentation, at midnight:
 
-    - Improved API
-    - Revised Documentation
-    - Client page using another person's API
+- Improved API
+- Revised Documentation
+- Client page using another person's API
 
 ## About the final project
 
