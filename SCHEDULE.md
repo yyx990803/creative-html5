@@ -28,32 +28,28 @@ Data (1) - JSON & Ajax, working with APIs
 Mar.7 - SVG & CSS3  
 Data (2) - Visualizing Data
 
-### Week 7: 
-Mar.14 - SVG & CSS3 continued  
-Data (3) - data + animation  
-Project 2 in progress workshop
+### Week 7:
+Mar.14 - Cancelled
 
 ### Week 8:
-Mar.21 - **Project 2: Data - critique**  
-Interactivity (1) - Mouse, Keyboard, Scrolling  
-**Project 3: Interactivity - assigned**
+Mar.21 - Building your own API with Node.js
 
 ### Week 9: 
 Mar.28 - Spring Break
 
 ### Week 10: 
-Apr.4 - Interactivity (2) - Mobile Device: Touch, Accelerometer
+Apr.4 - Node.js continued: Server and Client
 
 ### Week 11: 
-Apr.11 - Interactivity (3) - WebCam & Speech Recognition  
-Project 3 in progress workshop
+Apr.11 - **Project 2: Data - critique**  
+Interactivity (1) - Mouse, Keyboard, Scrolling
 
 ### Week 12: 
-Apr.18 - **Project 3: Interactivity - critique**  
-**Final Project - assigned**
+Apr.18 - Interactivity (2) - Mobile Device: Touch, Accelerometer
 
 ### Week 13: 
-Apr.25 - TBD depending on class progress and interest (see potential topics below)
+Apr.25 - Interactivity (3) - WebCam & Speech Recognition  
+Final project workshop
 
 ### Week 14: 
 May.2 - TBD / Final Project Workshop
