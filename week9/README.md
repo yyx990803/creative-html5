@@ -1,4 +1,4 @@
-# Week 8 - Server & Client
+# Week 9 - Server & Client
 
 This week we went over how to build a simple API server with the Express framework, and how to consume that API from a third-party web page. To run the code examples, go into `week9/server` and run `npm install express` (don't forget this) then `node server.js`.
 
