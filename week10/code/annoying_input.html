@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>key</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <input id="haha">
+
+        <script>
+
+            var input = document.getElementById('haha')
+
+            input.addEventListener('keypress', function (e) {
+
+                e.preventDefault()
+
+                var oldChar = String.fromCharCode(e.keyCode),
+                    newChar = String.fromCharCode(e.keyCode + 1)
+
+                console.log(oldChar + ' => ' + newChar)
+
+                input.value += newChar
+
+            })
+
+        </script>
+    </body>
+</html>

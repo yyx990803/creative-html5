@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>touch</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style>
+            #dot {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                background-color: #f33;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dot"></div>
+
+        <script>
+
+            var dot = document.getElementById('dot')
+
+            window.addEventListener('touchmove', function (e) {
+                e.preventDefault()
+
+                // e.touches
+
+                var touch = e.changedTouches[0]
+
+                dot.style.top = touch.pageY -50 + 'px'
+                dot.style.left = touch.pageX -50 + 'px'
+
+            })
+
+        </script>
+    </body>
+</html>

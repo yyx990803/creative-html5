@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <a class="hi" data-name="evan">Evan</a><br>
+        <a class="hi" data-name="burak">Burak</a><br>
+        <a class="hi" data-name="daniel">Daniel</a><br>
+
+        <script type="text/javascript">
+
+            document.body.addEventListener('click', function (e) {
+
+                var el = e.target
+
+                if (el.classList.contains('hi')) {
+
+                    console.log(el.dataset.name)
+
+                }
+
+            })
+
+            var newButton = document.createElement('a')
+            newButton.classList.add('hi')
+            newButton.dataset.name = "freddie"
+            newButton.textContent = "Freddie"
+
+            document.body.appendChild(newButton)
+
+        </script>
+    </body>
+</html>

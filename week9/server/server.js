@@ -52,7 +52,7 @@ var data = [
 
 // home
 app.get('/', function (req, res) {
-    var returnString = 'Welcome to the people API. Please use /people to get people data!'
+    var returnString = 'Welcome to the people API. Please use /people to get people data!!!'
     res.send(returnString)
 })
 

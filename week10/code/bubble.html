@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bubble</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="top">
+            <div id="level2">
+                <div id="level3">
+                    <a id="button">Hit me</a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            function handler (e) {
+                console.log('Event reached ' + e.currentTarget.id)
+            }
+
+            document.getElementById('top').addEventListener('click', handler)
+            document.getElementById('level2').addEventListener('click', handler)
+            document.getElementById('level3').addEventListener('click', handler)
+            document.getElementById('button').addEventListener('click', handler)
+
+        </script>
+    </body>
+</html>
