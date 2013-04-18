@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "awesome extension",
+    "description": "it's awesome.",
+    "version": "0.0.1",
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    } ,
+
+    "content_scripts": [
+        {
+            "matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}

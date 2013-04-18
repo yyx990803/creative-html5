@@ -1,0 +1,1 @@
+alert('You won a lottery!')
