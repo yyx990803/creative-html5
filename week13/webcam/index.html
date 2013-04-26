@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebCam</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <video id="vid" controls></video>
+        <button id="takeshot">take screenshot</button>
+        <img>
+
+        <script>
+
+            var video = document.getElementById('vid'),
+                canvas = document.createElement('canvas'),
+                ctx = canvas.getContext('2d')
+
+            canvas.width = 640
+            canvas.height = 480
+
+            navigator.getUserMedia =
+                navigator.getUserMedia ||
+                navigator.webkitGetUserMedia ||
+                navigator.mozGetUserMedia
+
+            navigator.getUserMedia({
+                video: true
+            }, success, fail)
+
+            function success (stream) {
+                video.src = window.webkitURL.createObjectURL(stream)
+            }
+
+            function fail () {
+                console.log('fail!')
+            }
+
+            document.getElementById('takeshot').addEventListener('click', function () {
+                ctx.drawImage(video, 0, 0)
+                document.querySelector('img').src = canvas.toDataURL('image/webp')
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speech Recognition</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="speech.js"></script>
+    </head>
+    <body>
+        <script>
+
+            var speech = new Speech({
+                debugging: true,
+                continuous: true,
+                interimResults: true,
+                autoRestart: true
+            })
+
+            speech
+                .on('finalResult', function (msg) {
+                    document.body.innerHTML = msg
+                })
+                .start()
+
+        </script>
+    </body>
+</html>
